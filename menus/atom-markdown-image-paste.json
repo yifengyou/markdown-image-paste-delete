@@ -1,0 +1,34 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "直接粘贴(Paste)",
+        "command": "atom-markdown-image-paste:paste"
+      },
+      {
+        "label": "删除图片(delImage)",
+        "command": "atom-markdown-image-paste:delImage"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "atom-markdown-image-paste",
+          "submenu": [
+            {
+              "label": "直接粘贴(Paste)",
+              "command": "atom-markdown-image-paste:paste"
+            },
+            {
+              "label": "删除图片(delImage)",
+              "command": "atom-markdown-image-paste:delImage"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
+        "spec": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
+        "type": "local"
+      },
+      "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\apm-install-dir-118412-11188-11taio1.s9l9uanhfr"
+    ]
+  ],
+  "_from": "..\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
+  "_id": "atom-markdown-image-paste@2.5.2",
+  "_inCache": true,
+  "_location": "/atom-markdown-image-paste",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
+    "spec": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:..\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
+  "_shasum": "e80a35c02cf14b85c2f9722ef0be98ded2be7090",
+  "_shrinkwrap": null,
+  "_spec": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
+  "_where": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\apm-install-dir-118412-11188-11taio1.s9l9uanhfr",
+  "bugs": {
+    "url": "https://github.com/yifengyou/atom-markdown-image-paste/issues"
+  },
+  "configSchema": {
+    "use_subfolder": {
+      "type": "boolean",
+      "default": true,
+      "title": "保存图片到子目录",
+      "description": "图片会存放在当前工作目录的子目录，子目录不存在则创建",
+      "order": 10
+    },
+    "subfolder": {
+      "type": "string",
+      "default": "image",
+      "title": "存放图片的子目录名称",
+      "description": "",
+      "order": 20
+    },
+    "infoalertenable": {
+      "type": "boolean",
+      "default": true,
+      "title": "弹窗信息显示",
+      "description": "每次贴图等操作右上角弹窗显示状态",
+      "order": 30
+    }
+  },
+  "dependencies": {},
+  "description": "只需'ctrl+v'粘贴图片即可自动生成",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/yifengyou/atom-markdown-image-paste#readme",
+  "keywords": [
+    "atom",
+    "markdown",
+    "image",
+    "paste"
+  ],
+  "license": "MIT",
+  "main": "./lib/atom-markdown-image-paste",
+  "name": "atom-markdown-image-paste",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yifengyou/atom-markdown-image-paste.git"
+  },
+  "version": "2.5.2"
+}
