@@ -27,11 +27,11 @@ Something I hope you know before go into the coding~
 
 ## 截图演示
 
-![snapshot.gif](image/snapshot.gif)
+![snapshot.gif](https://raw.githubusercontent.com/yifengyou/markdown-image-paste-delete/master/image/snapshot.gif)
 
-![delimage.gif](image/delimage.gif)
+![delimage.gif](https://raw.githubusercontent.com/yifengyou/markdown-image-paste-delete/master/image/delimage.gif)
 
-![dellinesnapshot.gif](image/dellinesnapshot.gif)
+![dellinesnapshot.gif](https://raw.githubusercontent.com/yifengyou/markdown-image-paste-delete/master/image/dellinesnapshot.gif)
 
 ## 注意
 
@@ -45,12 +45,11 @@ Something I hope you know before go into the coding~
 6. **不支持 Win 本地图片复制粘贴 **，会报错误粘贴板为空，怎么破？
 7. 支持 QQ 、微信聊天窗口图片复制粘贴
 
-
 ## 推荐 Snipaste 截图神器
 
-![1561429590195.png](image/1561429590195.png)
+![1561429590195.png](https://raw.githubusercontent.com/yifengyou/markdown-image-paste-delete/master/image/1561429590195.png)
 
-![1561429523195.jpg](image/1561429523195.jpg)
+![1561429523195.jpg](https://raw.githubusercontent.com/yifengyou/markdown-image-paste-delete/master/image/1561429523195.jpg)
 
 `我懒懒的搞了别人动图过来~~`
 
