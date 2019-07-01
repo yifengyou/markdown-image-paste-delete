@@ -1,86 +1,58 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
-        "scope": null,
-        "escapedName": null,
-        "name": null,
-        "rawSpec": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
-        "spec": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
-        "type": "local"
-      },
-      "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\apm-install-dir-118412-11188-11taio1.s9l9uanhfr"
-    ]
-  ],
-  "_from": "..\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
-  "_id": "atom-markdown-image-paste@2.5.2",
+  "_id": "markdown-image-paste-delete@0.1.0",
   "_inCache": true,
-  "_location": "/atom-markdown-image-paste",
+  "_location": "/markdown-image-paste-delete",
   "_phantomChildren": {},
-  "_requested": {
-    "raw": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
-    "scope": null,
-    "escapedName": null,
-    "name": null,
-    "rawSpec": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
-    "spec": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
-    "type": "local"
-  },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:..\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
-  "_shasum": "e80a35c02cf14b85c2f9722ef0be98ded2be7090",
-  "_shrinkwrap": null,
-  "_spec": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\d-118412-11188-1guow6s.zjvh88h0k9\\package.tgz",
-  "_where": "C:\\Users\\YOUYIF~1\\AppData\\Local\\Temp\\apm-install-dir-118412-11188-11taio1.s9l9uanhfr",
   "bugs": {
-    "url": "https://github.com/yifengyou/atom-markdown-image-paste/issues"
+    "url": "https://github.com/yifengyou/markdown-image-paste-delete/issues"
   },
   "configSchema": {
     "use_subfolder": {
       "type": "boolean",
       "default": true,
-      "title": "保存图片到子目录",
-      "description": "图片会存放在当前工作目录的子目录，子目录不存在则创建",
+      "title": "保存图片到子目录(Save image to subdirectory)",
+      "description": "图片会存放在当前工作目录的子目录，子目录不存在则创建(Images will be stored in a subdirectory of the current working directory. Create a subdirectory if it does not exist)",
       "order": 10
     },
     "subfolder": {
       "type": "string",
       "default": "image",
-      "title": "存放图片的子目录名称",
+      "title": "存放图片的子目录名称(The name of the subdirectory where the image is stored)",
       "description": "",
       "order": 20
     },
     "infoalertenable": {
       "type": "boolean",
       "default": true,
-      "title": "弹窗信息显示",
-      "description": "每次贴图等操作右上角弹窗显示状态",
+      "title": "弹窗信息显示(Whether to display popup information)",
+      "description": "每次贴图等操作右上角弹窗显示状态(In each operation, the pop-up window in the upper right corner displays the status)",
       "order": 30
     }
   },
   "dependencies": {},
-  "description": "只需'ctrl+v'粘贴图片即可自动生成",
+  "description": "Markdown快速贴图/删除图片(Quick and easy to paste/delete pictures in Markdown)",
   "devDependencies": {},
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "homepage": "https://github.com/yifengyou/atom-markdown-image-paste#readme",
+  "homepage": "https://github.com/yifengyou/markdown-image-paste-delete#readme",
   "keywords": [
     "atom",
     "markdown",
     "image",
-    "paste"
+    "paste",
+    "delete"
   ],
   "license": "MIT",
-  "main": "./lib/atom-markdown-image-paste",
-  "name": "atom-markdown-image-paste",
+  "main": "./lib/markdown-image-paste-delete",
+  "name": "markdown-image-paste-delete",
   "optionalDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yifengyou/atom-markdown-image-paste.git"
+    "url": "git+https://github.com/yifengyou/markdown-image-paste-delete.git"
   },
-  "version": "2.5.2"
+  "version": "0.1.0"
 }

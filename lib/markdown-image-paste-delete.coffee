@@ -10,11 +10,11 @@ module.exports =
     activate : ->
       @subscriptions = new CompositeDisposable
       @subscriptions.add atom.commands.add 'atom-workspace',
-            'atom-markdown-image-paste:paste' : => @paste()
+            'markdown-image-paste-delete:paste' : => @paste()
       @subscriptions.add atom.commands.add 'atom-workspace',
-            'atom-markdown-image-paste:namedpaste' : => @namedpaste()
+            'markdown-image-paste-delete:namedpaste' : => @namedpaste()
       @subscriptions.add atom.commands.add 'atom-workspace',
-            'atom-markdown-image-paste:delImage' : => @delImage()
+            'markdown-image-paste-delete:delImage' : => @delImage()
 
     deactivate : ->
         @subscriptions.dispose()
@@ -49,7 +49,7 @@ module.exports =
           img = clipboard.readImage()
           # 空内容处理
           if img.isEmpty()
-            if atom.config.get 'atom-markdown-image-paste.infoalertenable'
+            if atom.config.get 'markdown-image-paste-delete.infoalertenable'
               atom.notifications.addError(message = '快速贴图失败', {detail:'粘贴板为空'})
             return
 
@@ -83,9 +83,9 @@ module.exports =
           fullname = join(curDirectory, filename)
 
           subFolderToUse = ""
-          if atom.config.get 'atom-markdown-image-paste.use_subfolder'
+          if atom.config.get 'markdown-image-paste-delete.use_subfolder'
             # 根据设置获取子目录文件名
-            subFolderToUse = atom.config.get 'atom-markdown-image-paste.subfolder'
+            subFolderToUse = atom.config.get 'markdown-image-paste-delete.subfolder'
             if subFolderToUse != ""
               assetsDirectory = join(curDirectory, subFolderToUse)
               # 如果子目录不存在则创建之
@@ -126,12 +126,12 @@ module.exports =
           # 写代码到光标行
           cursor.insertText text
           cursor.setCursorBufferPosition position
-          if atom.config.get 'atom-markdown-image-paste.infoalertenable'
-            if atom.config.get 'atom-markdown-image-paste.infoalertenable'
+          if atom.config.get 'markdown-image-paste-delete.infoalertenable'
+            if atom.config.get 'markdown-image-paste-delete.infoalertenable'
               atom.notifications.addSuccess(message = messagecontent, {detail:'文件促存放路径:' + fullname})
         # 捕获错误异常
         catch error
-            if atom.config.get 'atom-markdown-image-paste.infoalertenable'
+            if atom.config.get 'markdown-image-paste-delete.infoalertenable'
               atom.notifications.addError(message = '贴图失败', {detail:'错误原因:' + error})
 
     delImage : ->
@@ -170,18 +170,18 @@ module.exports =
 
           # 检验文件存在与否
           if !fs.existsSync fullname
-            if atom.config.get 'atom-markdown-image-paste.infoalertenable'
+            if atom.config.get 'markdown-image-paste-delete.infoalertenable'
               atom.notifications.addError(message = '删除失败', {detail:'文件不存在，其完整路径名:' + fullname })
             return
 
           # 删除文件，删除当前行内容
           fs.unlink fullname, (error) ->
             if error
-              if atom.config.get 'atom-markdown-image-paste.infoalertenable'
+              if atom.config.get 'markdown-image-paste-delete.infoalertenable'
                 atom.notifications.addError(message = '删除失败', {detail:'原因:' + error})
               return
             else
-              if atom.config.get 'atom-markdown-image-paste.infoalertenable'
+              if atom.config.get 'markdown-image-paste-delete.infoalertenable'
                 atom.notifications.addSuccess(message = '删除成功', {detail:'[' + fullname + ']已被删除'})
               cursor.deleteLine()
           # 删除多余空白行
@@ -191,7 +191,7 @@ module.exports =
               cursor.deleteLine()
         # 捕获错误异常
         catch error
-          if atom.config.get 'atom-markdown-image-paste.infoalertenable'
+          if atom.config.get 'markdown-image-paste-delete.infoalertenable'
               atom.notifications.addError(message = '删除失败', {detail:'错误原因:' + error})
 
 # 光标所在处插入text，光标移动到文本末尾

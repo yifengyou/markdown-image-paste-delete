@@ -1,0 +1,6 @@
+{
+  "atom-workspace atom-text-editor": {
+    "ctrl-v": "markdown-image-paste-delete:paste",
+    "ctrl-delete": "markdown-image-paste-delete:delImage"
+  }
+}
