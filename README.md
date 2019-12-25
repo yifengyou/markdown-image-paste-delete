@@ -22,8 +22,8 @@ Something I hope you know before go into the coding~
   - 方式二：**命名贴图**，**选中文字区域作为图片文件名**，“**Ctrl+v**”粘贴
     - 优点：可以命名图片
     - 缺点：需要选中文字作为文件名
-* 删除图片及Mardkwon图片链接，自动删除多余的空行
-  - 光标移到Mardkwon图片链接所在行，“**Ctrl+del**”，删除当前行以及对应的图片
+* 删除图片及Markdown图片链接，自动删除多余的空行
+  - 光标移到Markdown图片链接所在行，“**Ctrl+del**”，删除当前行以及对应的图片
 
 ## 截图演示
 
